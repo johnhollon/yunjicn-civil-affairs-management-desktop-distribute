@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACyklEQVQ4jW2TS2hUZxTHf+e7333NmMnETtokCHHAaKCltqRdlIJ1k7ar4gsEddGF4Ca4UGigtGBf0sei3XSTXaClLeiiUMGKUsGSghsfBBQjRCOkmjhizGRm7p253+niZiqCBw6Hc77v/M858P/LtsPTn99dXJpsJakFEVAA4fnmEBFUNQ7j1PfNcfHGv3ZZlgki+v83eT5Aji4oTslE4sjHZlmW11ARERVBnNNnG0XQToZmCkbANwZRTdptLCKACk5Vk1TUOaUQSn6NIp5Bkza9pQL9vbGsNVP+rdXBemKMqAUQRTdEvrw6OqSl2Jdz1xZwAioGfbzG8KYX+PmzvZR7Yr21UGPPx7+BtShgwIm2Utm0scjut7fK9pEBslaKriWYTsaO16v8+f0hVhsJSdqWcjEQPARUBMTEnkelv0S5EHJhZo4njYTTJ/fz3lsjWJTqcIVPp/5ifvExg30baKYdpO2g3cGpwzt+7KMT749V2Vgu8NXRd/nhl3+4cnORqBhxY+4+12Zu0Q4sR3a/wf1Hdaz1iKKAxQcrIIJE4ye1Nb/E4Q93MDzUx5mZOZzA5Zk5RseqvDbUx5bNFbZvHaRUDJm9s0xtpclgX5FavYmxAt+d2MePkx+w2kh5c2SAP745wM53RumPfVrtDi9vGeDcxRvM3l7i0tW7HBx/hVPnZ/l2+hI2Cn380LJn8leuLzzk3vwSHc/QWyrw+9nrYA0vvlTmdq3OrmqFL376m0+mLrLcTGlkirDzS8eTBgQeBH7ujZZgBBMHOX9XWxBY+ssFXa4nsNaCwMcWfCyewav0iCo450AdUgxRVVzmQATTE+GcsrzSEKzBlGLUKTjUokqWoTnVRcm1Inmahy61xfdVVXFOBVCnirHWAweIOgBUn7qs55KDqa5rxODIhCgIMFEYTERxmHR3yAWwPr3b3AXsvjmIi1ES+uHEf0A6PRKOx2ZeAAAAAElFTkSuQmCC"
+    rel="shortcut icon">
+  <title>批量下载档案使用说明</title>
+  <style>
+    * {
+      color: rgba(0, 0, 0, .87);
+      text-decoration: none;
+      word-wrap: break-word;
+    }
+
+    html {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-size: 16px;
+      margin: 2em auto;
+      max-width: 860px;
+      padding: 0px 2em;
+      background-color: #fcfcfc;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+
+    h3 {
+      font-size: 1.17em;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+
+    p {
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+
+    hr {
+      margin: 3em 0;
+    }
+
+    span {
+      font-weight: 800;
+    }
+
+    a {
+      color: #0D47A1;
+    }
+
+    #page-fotter,
+    #page-fotter a,
+    #page-fotter span {
+      margin: 120px 0 0 0;
+      text-align: center;
+      color: #aaa;
+      font-size: .8em;
+      font-weight: 300;
+    }
+
+    #browser-tip {
+      color: red;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align: center;">批量下载档案使用说明</h1>
+  <p>批量下载档案的操作流程较为复杂，不仅耗时较长，且服务器与客户端在运算过程中容易出现异常情况。为确保操作顺利进行，请按照本说明操作。</p>
+  <p>在档案下载过程中，可切换操作界面执行其他任务；关闭软件重新打开，仍可继续执行之前未完成的下载任务。</p>
+  <h2>一、下载前的准备工作</h2>
+  <h3>（一）路径设置要求</h3>
+  <p>建议将电脑客户端与档案存储路径设置在同一盘符（如D盘、E盘等），避免使用系统盘（C盘）。如此设置，可方便管理硬盘占用量，也对数据保护有利。</p>
+  <h3>（二）存储空间预留</h3>
+  <p>
+    每份档案（包含输出至档案存储目录的 PDF 文件及电脑客户端中的缓存文件）平均占用空间约 16Mb；每户（涵盖在享、停保、在办业务的所有户数）平均对应 3.2
+    份档案。你需提前根据业务数据规模，计算所需硬盘存储空间，并为目标盘符预留充足容量。由于缓存文件与 PDF 档案文件共同存储，整体占用空间较大，这也是推荐将客户端与档案存放路径置于同一盘符的原因。
+  </p>
+  <h2>二、使用方法详解</h2>
+  <h3>（一）任务创建与档案存储路径选择</h3>
+  <p>点击 “创建新的下载任务” 按钮，系统将创建并开启新的下载任务，稍等片刻，系统会弹出档案输出目录选择对话框。此时，请选择与电脑客户端处于同一盘符下的文件夹作为档案存储路径，以保障数据存储、管理和保护的便捷性。</p>
+  <h3>（二）任务进程说明</h3>
+  <p>档案下载分为初始化、数据准备、生成档案三个阶段：</p>
+  <p><span>1. 初始化：</span>完成初始化后，系统将提示用户选择档案输出目录（操作方法见前文）。</p>
+  <p><span>2.
+      数据准备：</span>此阶段耗时与数据量大小和客户端缓存直接相关，特别是客户端缓存，若有缓存，则仅需准备缓存后发生了变化的数据，能极大地提高档案生成效率。进入该阶段后，下载任务列表将显示选定的档案存储路径，点击其右侧的文件夹图标，可以打开该路径。
+  </p>
+  <p><span>3.
+      生成档案：</span>此阶段耗时与数据量大小和客户端缓存直接相关，特别是客户端缓存，若有缓存，则仅需准备缓存后发生了变化的数据，能极大地提高档案生成效率。进入此阶段后，任务列表将展示任务描述信息，并通过数字直观呈现下载进度。若存在档案生成失败的情况，任务结束后，用户可点击任务描述右侧的文件夹按钮，打开日志文件夹，将其中的日志文件发送给客服人员，以便核查失败原因。
+  </p>
+  <h3>（三）任务状态解读</h3>
+  <p>档案下载任务包含执行中、已中断、已结束三种状态：</p>
+  <p><span>1. 执行中：</span>任务正在正常运行。</p>
+  <p><span>2. 已中断：</span>若在任务执行过程中关闭系统，任务状态将变为已中断；任务执行过程中发生了不可逆的错误（如操作系统内存溢出、网络中断等）也会导致任务中断。用户可点击 “已中断”
+    右侧的播放按钮，可继续执行任务。</p>
+  <p><span>3. 已结束：</span>任务处理完毕。若存在档案生成失败的情况，用户可点击任务描述右侧的文件夹按钮，打开日志文件夹，将其中的日志文件发送给客服人员，以便核查失败原因。</p>
+  <h3>（四）后台任务操作</h3>
+  <p>档案下载均为后台任务，即便任务处于执行中状态，用户仍可切换模块执行其他业务操作。当有任务正在执行时，界面右上角会出现带有读取图标的任务执行列表，点击其中的任务条目，可直接跳转至对应档案下载页面。
+  </p>
+  <h2>三、注意事项</h2>
+  <h3>（一）本地缓存管理</h3>
+  <p>档案下载任务均为客户端本地任务，任务信息仅存储于客户端，未在服务器留存。若删除客户端程序，所有缓存数据（包括任务进度与相关信息）将一并被删除。因此，用户需谨慎删除客户端程序，避免意外导致数据丢失。</p>
+  <h3>（二）并发任务处理</h3>
+  <p>用户可尝试同时执行多个下载档案任务，但针对同一类业务，并行执行多个任务不仅无法加速下载进程，反而会延长整体耗时（总时长 = 同类任务数 * 单个任务时长）。由于档案生成依赖 java 程序运行，若电脑配置较低（内存小于
+    16G），不建议同时启动多个下载任务，以免因系统资源不足导致任务卡顿甚至崩溃。</p>
+  <h3>（三）档案输出路径规范</h3>
+  <p>档案输出目录采用层级结构：选定的档案输出目录 -> 县级地区名称（仅县级用户存在此层级） -> 镇级地区名称（县、镇级用户存在此层级） -> 村级地区名称（县、镇、村级用户存在此层级） -> 业务类别名称 ->
+    档案类别名称（如有） -> 档案类别名称（如有） -> 城乡分类名称（如有） -> 业务状态名称 ->
+    档案文件。为便于上级向下级分发档案及按地区核对数据，建议每次选择同一档案输出目录，实现业务档案的统一地区归类。当然，用户也可根据管理需要按业务类别分别选择输出目录。</p>
+  <h2>四、数据安全保障</h2>
+  <h3>（一）本地缓存内容解析</h3>
+  <p>本地缓存数据包含三类：</p>
+  <p><span>1. 预生成档案 PDF 文件：</span>未加密。通过数据关联记录末次变更时间，缓存用于加速档案生成。</p>
+  <p><span>2. 预计算业务数据：</span>未加密。源自服务器计算结果。通过数据关联记录末次变更时间，缓存用于加速档案生成。</p>
+  <p><span>3. 其它各类文档图片：</span>加密文件。</p>
+  <h3>（二）物理性保护措施</h3>
+  <p>
+    为实现便捷、高效的数据物理保护，建议将电脑客户端与档案存放路径设置在同一盘符。如此一来，数据的物理保护可简化为对该硬盘（对应盘符）的防护。若需多盘备份，可将档案生成目录与客户端软件一同压缩后拷贝至其他物理硬盘，安排专人负责管理，限制外借、规范使用。
+  </p>
+  <h3>（三）未加密数据处理</h3>
+  <p>预生成的档案 PDF 文件和预计算业务数据文件存储于 “客户端安装根目录\cached-data\archives”
+    目录下。由于该目录文件数量庞大，若出于数据保护目的需删除未加密数据，请勿直接打开目录进行操作（避免因文件过多导致 windows
+    操作系统内存溢出），应直接删除整个目录。删除后再次下载档案，系统将重新整理全部数据；若保留这些文件，后续仅需处理缓存变更后的数据，可显著提升下载效率。</p>
+  <h2>五、其它</h2>
+  <h3>（一）单文件下载</h3>
+  <p>
+    为了方便下载会议材料（如公示照片、民主评议材料照片）等，电脑客户端提供了单张图片（或单个文件）下载功能。在电脑客户端点击图片，可打开图片查看图层，在该图层的右上角，有“关闭”、“放大”、“缩小”、“保存”按钮，点击“保存”按钮，可将图片解密并保存到电脑本地。
+  <p>
+  <h3>（二）单户下载档案</h3>
+  <p>电脑客户端原提供的单户下载档案功能仍可正常使用。
+  <p>
+
+  <div style="margin-top: 60px;"></div>
+  <div id="page-fotter">
+    &copy; <span>2012-</span><span id="year"></span> 赤峰云集软件科技有限公司 <a href="//www.yunjicn.com"
+      target="_blank">yunjicn.com</a>
+  </div>
+  <div style="margin-top: 60px;"></div>
+
+  <script>
+    document.getElementById("year").innerText = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
