@@ -1,0 +1,16 @@
+以下是 yunjicn-civil-affairs-management-desktop-win32-x64-installer.zip 文件的哈希值，可检验下载文件是否安全、完整：
+
+md5.hex : 7aeca01bae4388e4783fbdeb4ffcfc87
+sha1.hex :  b2a22527535dc9bda487c7e8a14418ed05ed613f
+sha256.hex :  9584c9daf68a8a64960db77730ac0e646d9a00a024c513e6c3c0d8d0c0b67718
+
+你可使用powershell自带的哈希工具对文件进行验证，命令如下：
+
+Get-FileHash 文件绝对路径 | Format-List
+
+该命令默认使用 sha256 哈希算法。如要使用其它算法，命令如下：
+
+Get-FileHash 文件绝对路径 -Algorithm 算法名称 | Format-List
+
+算法名称包括： MD5、SHA1、SHA256
+
